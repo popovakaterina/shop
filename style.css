@@ -20,7 +20,6 @@ img {
     width: 1600px;
     margin: 0 auto;
     background: white;
-
 }
 .nav {
     display: flex;
@@ -136,6 +135,7 @@ h4 {
 .price {
     padding-left: 16px;
     padding-top: 16px;
+    padding-bottom: 20px;
     font-family: 'Lato';
     font-style: normal;
     font-weight: 400;
@@ -164,4 +164,57 @@ h4 {
     color: #F26376;
     outline: none;
     cursor: pointer;
+}
+@media (max-width: 849px) {
+	body {
+        background: none;
+        margin: 0;
+    }
+    .container {
+		width: 768px;
+	} 
+    .shop-head {
+        height: 368px; 
+     }
+     .rectangle {
+        height: 92px;
+        width: 12px;
+     }
+     .shopname{
+       max-width: 283px; 
+       max-height: 78px;
+     }
+    .mainpic {
+        max-width: 386px;
+    }
+    .logo {
+        display: flex;
+        justify-content: flex-start;
+        padding-left: 32px;
+    }
+    .menu {
+        display: flex;
+        justify-content: flex-end;
+        padding-right: 32px;
+    }
+    .info {
+        margin-left: 16px;
+        margin-right: 16px;
+    }
+    .item-4 {
+        margin-left: 16px;
+        margin-right: 16px;    
+    }
+    .shop {
+        width: 734px;
+        margin-left: 16px;
+        padding-top: 48px;
+        display: grid;
+        grid-template-columns: 1fr 1fr ;
+        grid-template-rows: 1fr 1fr 1fr;
+        gap:16px; 
+    }  
+    .button {
+        margin-left: 278px;
+    }
 }
