@@ -1,31 +1,35 @@
 @import url("https://fonts.googleapis.com/css2?family=Lato&family=Open+Sans:ital,wght@0,300;0,400;1,300&display=swap");
 
 * {
-    margin: 0px;
-    padding: 0px;
+    margin: 0;
+    padding: 0;
+    text-decoration: none;
     box-sizing: border-box;
-    text-decoration: none; 
-    
 }
+
 body {
     scroll-behavior: smooth;
-    text-rendering:optimizeSpeed; 
-    background: #E5E5E5; 
+    text-rendering: optimizeSpeed;
 }
+
 img {
     display: block;
     max-width: 100%;
 }
+
 .container {
-    width: 1600px;
+    max-width: 1600px;
     margin: 0 auto;
     background: white;
+
 }
+
 .nav {
     display: flex;
     justify-content: space-between;
     background: #222222;
 }
+
 .logo {
     width: 316px;
     display: flex;
@@ -33,49 +37,59 @@ img {
     align-items: center;
     gap: 41px;
 }
+
 .menu {
     width: 367px;
     padding-top: 30px;
     padding-bottom: 22px;
     display: flex;
-    justify-content:flex-start;
+    justify-content: flex-start;
     gap: 33px;
     cursor: pointer;
 }
+
 .shop-head {
-   height: 764px; 
-   background: #F1E4E6;
-   display: flex;
-   align-items: center;
-   gap: 16px;
+    max-height: 764px;
+    background: #F1E4E6;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 16px;
 }
+
 .shopname {
-    width: 377px;
-    height: 93px;
+    max-width: 377px;
+    max-height: 93px;
 }
-.info{
-    margin-left: 230px;
-    margin-right: 230px ;
+
+.rectangle {
+    padding-left: 64px;
+}
+
+.info {
     padding-top: 65px;
     display: flex;
-    justify-content: space-between;
-    gap:30px;
+    justify-content: center;
+    gap: 30px;
     cursor: pointer;
 }
+
 .item-4 {
-    margin-left: 230px;
-    margin-right: 230px ;
+    display: flex;
+    justify-content: center;
     margin-top: 30px;
     cursor: pointer;
 }
+
 .titlepar {
     margin-top: 96px;
     display: flex;
     flex-direction: column;
     align-items: center;
     text-align: center;
-    gap:6px;
+    gap: 6px;
 }
+
 .title {
     font-family: 'Lato';
     font-style: normal;
@@ -94,20 +108,21 @@ img {
     color: #9F9F9F;
 }
 .shop {
-    width: 1140px;
     margin-left: 230px;
+    max-width: 1140px;
     padding-top: 48px;
     display: grid;
     grid-template-columns: 1fr 1fr 1fr;
     grid-template-rows: 1fr 1fr;
-    gap:30px;
+    gap: 30px;
 }
+
 .item {
-    width: 360px;
+    max-width: 360px;
     background: #F8F8F8;
     cursor: pointer;
 }
-h4 { 
+h4 {
     padding-top: 25px;
     padding-bottom: 16px;
     padding-left: 16px;
@@ -117,6 +132,7 @@ h4 {
     font-size: 13px;
     line-height: 16px;
 }
+
 .text {
     width: 340px;
     height: 51px;
@@ -132,6 +148,7 @@ h4 {
     order: 1;
     flex-grow: 0;
 }
+
 .price {
     padding-left: 16px;
     padding-top: 16px;
@@ -146,7 +163,8 @@ h4 {
     order: 2;
     flex-grow: 0
 }
-.button{
+
+.button {
     margin-top: 49px;
     margin-left: 696px;
     margin-bottom: 51px;
@@ -165,56 +183,141 @@ h4 {
     outline: none;
     cursor: pointer;
 }
+
+
 @media (max-width: 849px) {
-	body {
+    body {
         background: none;
         margin: 0;
     }
+
     .container {
-		width: 768px;
-	} 
-    .shop-head {
-        height: 368px; 
-     }
-     .rectangle {
-        height: 92px;
-        width: 12px;
-     }
-     .shopname{
-       max-width: 283px; 
-       max-height: 78px;
-     }
-    .mainpic {
-        max-width: 386px;
+        max-width: 768px;
     }
+
+    .shop-head {
+        max-height: 367px;
+        display: flex;
+        justify-content: center;
+    }
+
+    .mainpic {
+        max-width: 368px;
+        max-height: 368px;
+    }
+
+    .shopname {
+        max-width: 283px;
+        max-height: 78px;
+        padding-right: 16px;
+    }
+
+    .rectangle {
+        padding-left: 0px;
+    }
+
     .logo {
         display: flex;
         justify-content: flex-start;
         padding-left: 32px;
     }
+
     .menu {
         display: flex;
         justify-content: flex-end;
         padding-right: 32px;
     }
+
     .info {
         margin-left: 16px;
         margin-right: 16px;
     }
+
     .item-4 {
         margin-left: 16px;
-        margin-right: 16px;    
+        margin-right: 16px;
     }
+
     .shop {
         width: 734px;
         margin-left: 16px;
         padding-top: 48px;
         display: grid;
-        grid-template-columns: 1fr 1fr ;
+        grid-template-columns: 1fr 1fr;
         grid-template-rows: 1fr 1fr 1fr;
-        gap:16px; 
-    }  
+        gap: 16px;
+    }
     .button {
         margin-left: 278px;
     }
+}
+
+
+@media only screen and (min-device-width : 320px) and (max-device-width : 767px) {
+
+    .nav {
+        max-width: 100%;
+        margin: 0;
+    }
+    .shop-head {
+        max-width: 100%;
+        height: 363px;
+        display: flex;
+        justify-content: center;
+    }
+    body {
+        margin: 0;
+    }
+    .container {
+        max-width: 767px;
+        overflow: hidden;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+    .mainpic {
+        display: none;
+    }
+
+    .shopname {
+        max-width: 236px;
+        max-height: 66px;
+    }
+
+    .rectangle {
+        max-height: 61px;
+    }
+
+    .menu-prof {
+        display: none;
+    }
+
+    .menu-basket {
+        display: none;
+    }
+
+    .container {
+        max-width: 659px;
+    }
+
+    .info {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .item-4 {
+        max-width: 360px;
+    }
+    .shop {
+        margin: 0;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+    .button {
+        margin-top: 41px ;
+        margin-left: 0;
+    }
+
 }
